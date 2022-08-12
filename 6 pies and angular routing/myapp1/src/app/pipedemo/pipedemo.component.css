@@ -1,0 +1,26 @@
+h1{
+    color: black;
+    background-color: lightskyblue;
+    border: 3px;
+    padding: 4px;
+}
+
+h2{
+    color: orange;
+    background-color: navy;
+    border: 3px;
+    padding: 4px;
+}
+
+p{
+   
+    border: 3px;
+    padding: 4px;
+}
+
+h3{
+    color: tomato;
+    background-color: seagreen;
+    border: 3px;
+    padding: 4px; 
+}

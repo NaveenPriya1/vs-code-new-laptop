@@ -1,0 +1,50 @@
+<h2>source to view(.ts to .html)</h2>
+
+<p>source to view binding using interpolation</p>
+<hr>
+<h1>{{name}}</h1>
+<p><img src="{{imageurl}}"><i>interpolated image </i> spiderman</p>
+<hr>
+
+
+<h2>source to view(.ts to .html)</h2>
+
+<p>source to view binding using property binding</p>
+<hr>
+<a [href]="url">go to google</a>
+<p><img [src]="imageurl1"><i>property image </i> instagram</p>
+<hr>
+
+<h3>Printing JSON Array</h3>
+
+<table class="table table-stripped table-bordered">
+    <thead>
+        <!--class binding-->
+         <tr [class.inStock]="true">
+            <th>Name</th>
+            <th>Price</th>
+            <th>Available</th>
+            <th>Rating</th>
+         </tr>
+    </thead>
+    <tbody>
+        <!--ngDirective (used for loop)--><!--style binding-->
+         <tr *ngFor="let p of products" [style.background-color]="stylebind">
+           <td>{{p.name}}</td>
+           <td>{{p.price}}</td>
+           <td>{{p.availabe}}</td>
+           <td>{{p.rating}}</td>
+         </tr>
+    </tbody>
+</table>
+
+<hr>
+<!--event binging-->
+<div class="container">
+    <button class="btn btn-primary" (click)="show()">show img</button>
+
+    <div *ngIf="flag">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/811uvxKW0Xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    </div>
+</div>
